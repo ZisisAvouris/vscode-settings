@@ -31,7 +31,11 @@
                     }
                 },
                 {
-                    "scope": "variable.other.property.cpp",
+                    "scope": ["variable.other.property.cpp", "keyword.operator",
+                        "meta.body.function.definition.cpp",
+                        "meta.function.definition.cpp",
+                        "meta.block.cpp"
+                    ],
                     "settings": {
                         "foreground": "#d4daec",
                     }
