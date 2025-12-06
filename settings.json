@@ -15,162 +15,180 @@
         "editorGroupHeader.noTabsBackground": "#0e1a27",
         "editorGroupHeader.tabsBackground": "#0e1a27",
         "tab.hoverBackground": "#0e1a27",
+        "editorIndentGuide.background1": "#3d4a5870",
+        "editorIndentGuide.activeBackground1": "#3d4a58ff",
     },
     "editor.tokenColorCustomizations": {
-        "[Default Dark Modern]": {
-            "textMateRules": [
-                {
-                    "scope": "variable.other.enummember.cpp",
-                    "settings": {
-                        "foreground": "#b6cdb0"
-                    }
-                },
-                {
-                    "scope": "entity.name.function.preprocessor.cpp",
-                    "settings": {
-                        "foreground": "#bfb7fe",
-                    }
-                },
-                {
-                    "scope": [
-                        "variable.other.property.cpp",
-                        "keyword.operator",
-                        "meta.body.function.definition.cpp",
-                        "meta.function.definition.cpp",
-                        "meta.block.cpp",
-                        "punctuation.section.attribute.begin.cpp",
-                        "punctuation.section.attribute.end.cpp",
-                        "punctuation.definition.begin.bracket.square",
-                        "punctuation.definition.end.bracket.square",
-                        "punctuation.definition.parameters.begin.preprocessor.cpp",
-                        "punctuation.definition.parameters.end.preprocessor.cpp",
-                        "punctuation.section.parens.begin.bracket.round.cpp",
-                        "punctuation.section.parens.end.bracket.round.cpp",
-                        "punctuation.section.arguments.begin.bracket.round.function.call.cpp",
-                        "punctuation.section.arguments.end.bracket.round.function.call.cpp",
-                    ],
-                    "settings": {
-                        "foreground": "#d4daec",
-                    }
-                },
-                {
-                    "scope": [
-                        "entity.name.function",
-                        "keyword.other.operator.overload.cpp",
-                        "entity.name.operator.type.cpp",
-                    ],
-                    "settings": {
-                        "foreground": "#d1ce9e",
-                    }
-                },
-                {
-                    "scope": "comment",
-                    "settings": {
-                        "foreground": "#576370",
-                        "fontStyle": "italic"
-                    }
-                },
-                {
-                    "scope": [
-                        "entity.name.type.cpp",
-                        "entity.name.type.class.templated.cpp",
-                        "entity.name.namespace.cpp",
-                        "support.other.attribute.cpp",
-                    ],
-                    "settings": {
-                        "foreground": "#5eaa9b",
-                    }
-                },
-                {
-                    "scope": ["variable", "meta.preprocessor.macro.cpp"],
-                    "settings": {
-                        "foreground": "#afddf5",
-                    }
-                },
-                {
-                    "scope": [
-                        "constant.numeric",
-                        "string",
-                        "keyword.other.unit.hexadecimal.cpp",
-                        "keyword.other.unit.suffix.floating-point.cpp",
-                        "keyword.other.unit.suffix.integer.cpp",
-                    ],
-                    "settings": {
-                        "foreground": "#b68e82",
-                    }
-                },
-                {
-                    "scope": [
-                        "keyword.control.directive.include.cpp",
-                        "keyword.control.directive.pragma.cpp",
-                        "keyword.control.directive.conditional.ifdef.cpp",
-                        "keyword.control.directive.else.cpp",
-                        "keyword.control.directive.endif.cpp",
-                        "keyword.other.using.directive.cpp",
-                        "keyword.control.return.cpp",
-                        "keyword.control.if.cpp",
-                        "keyword.control.for.cpp",
-                        "keyword.control.while.cpp",
-                        "keyword.control.do.cpp",
-                        "keyword.control.switch.cpp",
-                        "keyword.control.case.cpp",
-                        "keyword.control.break.cpp",
-                        "keyword.control.default.cpp",
-                        "keyword.other.default.constructor.cpp",
-                        "keyword.other.default.destructor.cpp",
-                        "keyword.other.delete.constructor.cpp",
-                        "keyword.other.delete.destructor.cpp",
-                        "keyword.other.delete.function.cpp",
-                        "keyword.operator.new.cpp",
-                        "keyword.operator.delete.cpp",
-                    ],
-                    "settings": {
-                        "foreground": "#ae92b3",
-                    }
-                },
-                {
-                    "scope": [
-                        "storage.type.struct.cpp",
-                        "storage.type.class.cpp",
-                        "storage.type.enum.cpp",
-                        "storage.type.enum.enum-key.class.cpp",
-                        "storage.type.modifier.final.cpp",
-                        "storage.type.namespace.definition.cpp",
-                        "storage.type.template.cpp",
-                        "storage.type.template.argument.typename.cpp",
-                        "storage.type.template.argument.class.cpp",
-                        "storage.modifier.specifier.const.cpp",
-                        "storage.modifier.pointer.cpp",
-                        "storage.modifier.reference.cpp",
-                        "storage.modifier.inline.cpp",
-                        "constant.language.nullptr.cpp",
-                        "constant.language.false.cpp",
-                        "constant.language.true.cpp",
-                        "storage.type.modifier.access.public.cpp",
-                        "storage.type.modifier.access.private.cpp",
-                        "storage.type.modifier.access.protected.cpp",
-                        "storage.type.modifier.access.control.public.cpp",
-                        "storage.type.modifier.access.control.private.cpp",
-                        "storage.type.modifier.access.control.protected.cpp",
-                        "storage.modifier.specifier.functional.post-parameters.override.cpp",
-                        "storage.modifier.specifier.functional.post-parameters.const.cpp",
-                        "storage.modifier.specifier.static.cpp",
-                        "storage.type.built-in.primitive.cpp",
-                        "keyword.operator.cast.static_cast.cpp",
-                        "keyword.operator.cast.reinterpret_cast.cpp",
-                        "keyword.operator.cast.const_cast.cpp",
-                        "variable.language.this.cpp",
-                        "storage.modifier.specifier.functional.pre-parameters.inline.cpp",
-                        "storage.modifier.specifier.functional.post-parameters.noexcept.cpp",
-                        "keyword.operator.sizeof.cpp",
-                        "storage.modifier.specifier.functional.pre-parameters.explicit.cpp",
-                    ],
-                    "settings": {
-                        "foreground": "#608eb6",
-                    }
+        "textMateRules": [
+            {
+                "scope": "variable.other.enummember.cpp",
+                "settings": {
+                    "foreground": "#b6cdb0"
                 }
-            ]
-        },
+            },
+            {
+                "scope": "entity.name.function.preprocessor.cpp",
+                "settings": {
+                    "foreground": "#bfb7fe",
+                }
+            },
+            {
+                "scope": [
+                    "variable.other.property.cpp",
+                    "keyword.operator",
+                    "meta.body.function.definition.cpp",
+                    "meta.function.definition.cpp",
+                    "meta.block.cpp",
+                    "punctuation.section.attribute.begin.cpp",
+                    "punctuation.section.attribute.end.cpp",
+                    "punctuation.definition.begin.bracket.square",
+                    "punctuation.definition.end.bracket.square",
+                    "punctuation.definition.parameters.begin.preprocessor.cpp",
+                    "punctuation.definition.parameters.end.preprocessor.cpp",
+                    "punctuation.section.parens.begin.bracket.round.cpp",
+                    "punctuation.section.parens.end.bracket.round.cpp",
+                    "punctuation.section.arguments.begin.bracket.round.function.call.cpp",
+                    "punctuation.section.arguments.end.bracket.round.function.call.cpp",
+                    "keyword.other.operator.overload.cpp",
+                    "entity.name.operator.type.cpp",
+                ],
+                "settings": {
+                    "foreground": "#d4daec",
+                }
+            },
+            {
+                "scope": [
+                    "entity.name.function",
+                ],
+                "settings": {
+                    "foreground": "#d1ce9e",
+                }
+            },
+            {
+                "scope": "comment",
+                "settings": {
+                    "foreground": "#576370",
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "scope": [
+                    "entity.name.type.cpp",
+                    "entity.name.type.class.templated.cpp",
+                    "entity.name.namespace.cpp",
+                    "entity.other.attribute",
+                ],
+                "settings": {
+                    "foreground": "#5eaa9b",
+                }
+            },
+            {
+                "scope": ["variable", "meta.preprocessor.macro.cpp"],
+                "settings": {
+                    "foreground": "#96d1f1",
+                }
+            },
+            {
+                "scope": [
+                    "constant.numeric",
+                    "string",
+                    "keyword.other.unit.hexadecimal.cpp",
+                    "keyword.other.unit.exponent.decimal.cpp",
+                    "keyword.operator.minus.exponent.decimal.cpp",
+                    "keyword.other.unit.suffix.floating-point.cpp",
+                    "keyword.other.unit.suffix.integer.cpp",
+                    "keyword.other.unit.octal.cpp",
+                    "keyword.other.unit.binary.cpp",
+                    "keyword.other.unit.user-defined.cpp",
+                ],
+                "settings": {
+                    "foreground": "#b68e82",
+                }
+            },
+            {
+                "scope": [
+                    "keyword.control.directive.include.cpp",
+                    "keyword.control.directive.pragma.cpp",
+                    "keyword.control.directive.conditional.ifdef.cpp",
+                    "keyword.control.directive.else.cpp",
+                    "keyword.control.directive.endif.cpp",
+                    "keyword.control.directive.diagnostic.error.cpp",
+                    "keyword.control.directive.diagnostic.warning.cpp",
+                    "keyword.other.using.directive.cpp",
+                    "keyword.control.return.cpp",
+                    "keyword.control.if.cpp",
+                    "keyword.control.for.cpp",
+                    "keyword.control.while.cpp",
+                    "keyword.control.do.cpp",
+                    "keyword.control.continue.cpp",
+                    "keyword.control.switch.cpp",
+                    "keyword.control.case.cpp",
+                    "keyword.control.break.cpp",
+                    "keyword.control.default.cpp",
+                    "keyword.other.default.constructor.cpp",
+                    "keyword.other.default.destructor.cpp",
+                    "keyword.other.delete.constructor.cpp",
+                    "keyword.other.delete.destructor.cpp",
+                    "keyword.other.delete.function.cpp",
+                    "keyword.operator.new.cpp",
+                    "keyword.operator.delete.cpp",
+                ],
+                "settings": {
+                    "foreground": "#ae92b3",
+                }
+            },
+            {
+                "scope": [
+                    "storage.type.struct.cpp",
+                    "storage.type.class.cpp",
+                    "storage.type.enum.cpp",
+                    "storage.type.enum.enum-key.class.cpp",
+                    "storage.type.modifier.final.cpp",
+                    "storage.type.namespace.definition.cpp",
+                    "storage.type.template.cpp",
+                    "storage.type.template.argument.typename.cpp",
+                    "storage.type.template.argument.class.cpp",
+                    "storage.modifier.specifier.const.cpp",
+                    "storage.modifier.pointer.cpp",
+                    "storage.modifier.reference.cpp",
+                    "storage.modifier.inline.cpp",
+                    "constant.language.nullptr.cpp",
+                    "constant.language.false.cpp",
+                    "constant.language.true.cpp",
+                    "storage.type.modifier.access.public.cpp",
+                    "storage.type.modifier.access.private.cpp",
+                    "storage.type.modifier.access.protected.cpp",
+                    "storage.type.modifier.access.control.public.cpp",
+                    "storage.type.modifier.access.control.private.cpp",
+                    "storage.type.modifier.access.control.protected.cpp",
+                    "storage.modifier.specifier.functional.post-parameters.override.cpp",
+                    "storage.modifier.specifier.functional.post-parameters.const.cpp",
+                    "storage.modifier.specifier.static.cpp",
+                    "storage.type.built-in.primitive.cpp",
+                    "keyword.operator.cast.static_cast.cpp",
+                    "keyword.operator.cast.reinterpret_cast.cpp",
+                    "keyword.operator.cast.const_cast.cpp",
+                    "variable.language.this.cpp",
+                    "storage.modifier.specifier.functional.pre-parameters.inline.cpp",
+                    "storage.modifier.specifier.functional.pre-parameters.friend.cpp",
+                    "storage.modifier.specifier.functional.post-parameters.noexcept.cpp",
+                    "keyword.operator.sizeof.cpp",
+                    "storage.modifier.specifier.functional.pre-parameters.explicit.cpp",
+                    "storage.type.return-type.lambda.cpp",
+                    "storage.type.primitive.cpp",
+                ],
+                "settings": {
+                    "foreground": "#608eb6",
+                }
+            },
+            {
+                "scope": "constant.character.escape",
+                "settings": {
+                    "foreground": "#e9b6a5",
+                    "fontStyle": "bold"
+                }
+            },
+        ]
     },
     "editor.semanticTokenColorCustomizations": {
         "rules": {
