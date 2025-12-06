@@ -40,6 +40,14 @@
                         "meta.block.cpp",
                         "punctuation.section.attribute.begin.cpp",
                         "punctuation.section.attribute.end.cpp",
+                        "punctuation.definition.begin.bracket.square",
+                        "punctuation.definition.end.bracket.square",
+                        "punctuation.definition.parameters.begin.preprocessor.cpp",
+                        "punctuation.definition.parameters.end.preprocessor.cpp",
+                        "punctuation.section.parens.begin.bracket.round.cpp",
+                        "punctuation.section.parens.end.bracket.round.cpp",
+                        "punctuation.section.arguments.begin.bracket.round.function.call.cpp",
+                        "punctuation.section.arguments.end.bracket.round.function.call.cpp",
                     ],
                     "settings": {
                         "foreground": "#d4daec",
@@ -74,7 +82,7 @@
                     }
                 },
                 {
-                    "scope": "variable",
+                    "scope": ["variable", "meta.preprocessor.macro.cpp"],
                     "settings": {
                         "foreground": "#afddf5",
                     }
@@ -119,6 +127,47 @@
                     "settings": {
                         "foreground": "#ae92b3",
                     }
+                },
+                {
+                    "scope": [
+                        "storage.type.struct.cpp",
+                        "storage.type.class.cpp",
+                        "storage.type.enum.cpp",
+                        "storage.type.enum.enum-key.class.cpp",
+                        "storage.type.modifier.final.cpp",
+                        "storage.type.namespace.definition.cpp",
+                        "storage.type.template.cpp",
+                        "storage.type.template.argument.typename.cpp",
+                        "storage.type.template.argument.class.cpp",
+                        "storage.modifier.specifier.const.cpp",
+                        "storage.modifier.pointer.cpp",
+                        "storage.modifier.reference.cpp",
+                        "storage.modifier.inline.cpp",
+                        "constant.language.nullptr.cpp",
+                        "constant.language.false.cpp",
+                        "constant.language.true.cpp",
+                        "storage.type.modifier.access.public.cpp",
+                        "storage.type.modifier.access.private.cpp",
+                        "storage.type.modifier.access.protected.cpp",
+                        "storage.type.modifier.access.control.public.cpp",
+                        "storage.type.modifier.access.control.private.cpp",
+                        "storage.type.modifier.access.control.protected.cpp",
+                        "storage.modifier.specifier.functional.post-parameters.override.cpp",
+                        "storage.modifier.specifier.functional.post-parameters.const.cpp",
+                        "storage.modifier.specifier.static.cpp",
+                        "storage.type.built-in.primitive.cpp",
+                        "keyword.operator.cast.static_cast.cpp",
+                        "keyword.operator.cast.reinterpret_cast.cpp",
+                        "keyword.operator.cast.const_cast.cpp",
+                        "variable.language.this.cpp",
+                        "storage.modifier.specifier.functional.pre-parameters.inline.cpp",
+                        "storage.modifier.specifier.functional.post-parameters.noexcept.cpp",
+                        "keyword.operator.sizeof.cpp",
+                        "storage.modifier.specifier.functional.pre-parameters.explicit.cpp",
+                    ],
+                    "settings": {
+                        "foreground": "#608eb6",
+                    }
                 }
             ]
         },
@@ -126,7 +175,8 @@
     "editor.semanticTokenColorCustomizations": {
         "rules": {
             "enumMember": "#b6cdb0",
-            "newOperator": "#ae92b3"
+            "newOperator": "#ae92b3",
+            "memberOperatorOverload": "#d4daec"
         }
     }
 }
