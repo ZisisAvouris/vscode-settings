@@ -1,4 +1,5 @@
 {
+    "editor.semanticHighlighting.enabled": true,
     "workbench.colorCustomizations": {
         "editor.background": "#0e1a27",
         "window.activeBorder": "#0e1a27",
@@ -31,17 +32,25 @@
                     }
                 },
                 {
-                    "scope": ["variable.other.property.cpp", "keyword.operator",
+                    "scope": [
+                        "variable.other.property.cpp",
+                        "keyword.operator",
                         "meta.body.function.definition.cpp",
                         "meta.function.definition.cpp",
-                        "meta.block.cpp"
+                        "meta.block.cpp",
+                        "punctuation.section.attribute.begin.cpp",
+                        "punctuation.section.attribute.end.cpp",
                     ],
                     "settings": {
                         "foreground": "#d4daec",
                     }
                 },
                 {
-                    "scope": "entity.name.function",
+                    "scope": [
+                        "entity.name.function",
+                        "keyword.other.operator.overload.cpp",
+                        "entity.name.operator.type.cpp",
+                    ],
                     "settings": {
                         "foreground": "#d1ce9e",
                     }
@@ -54,7 +63,12 @@
                     }
                 },
                 {
-                    "scope": ["entity.name.type.cpp", "entity.name.type.class.templated.cpp", "entity.name.namespace.cpp"],
+                    "scope": [
+                        "entity.name.type.cpp",
+                        "entity.name.type.class.templated.cpp",
+                        "entity.name.namespace.cpp",
+                        "support.other.attribute.cpp",
+                    ],
                     "settings": {
                         "foreground": "#5eaa9b",
                     }
@@ -66,12 +80,53 @@
                     }
                 },
                 {
-                    "scope": ["constant.numeric", "string", "keyword.other.unit.hexadecimal.cpp"],
+                    "scope": [
+                        "constant.numeric",
+                        "string",
+                        "keyword.other.unit.hexadecimal.cpp",
+                        "keyword.other.unit.suffix.floating-point.cpp",
+                        "keyword.other.unit.suffix.integer.cpp",
+                    ],
                     "settings": {
                         "foreground": "#b68e82",
                     }
+                },
+                {
+                    "scope": [
+                        "keyword.control.directive.include.cpp",
+                        "keyword.control.directive.pragma.cpp",
+                        "keyword.control.directive.conditional.ifdef.cpp",
+                        "keyword.control.directive.else.cpp",
+                        "keyword.control.directive.endif.cpp",
+                        "keyword.other.using.directive.cpp",
+                        "keyword.control.return.cpp",
+                        "keyword.control.if.cpp",
+                        "keyword.control.for.cpp",
+                        "keyword.control.while.cpp",
+                        "keyword.control.do.cpp",
+                        "keyword.control.switch.cpp",
+                        "keyword.control.case.cpp",
+                        "keyword.control.break.cpp",
+                        "keyword.control.default.cpp",
+                        "keyword.other.default.constructor.cpp",
+                        "keyword.other.default.destructor.cpp",
+                        "keyword.other.delete.constructor.cpp",
+                        "keyword.other.delete.destructor.cpp",
+                        "keyword.other.delete.function.cpp",
+                        "keyword.operator.new.cpp",
+                        "keyword.operator.delete.cpp",
+                    ],
+                    "settings": {
+                        "foreground": "#ae92b3",
+                    }
                 }
             ]
+        },
+    },
+    "editor.semanticTokenColorCustomizations": {
+        "rules": {
+            "enumMember": "#b6cdb0",
+            "newOperator": "#ae92b3"
         }
     }
 }
