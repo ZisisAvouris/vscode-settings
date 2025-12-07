@@ -109,6 +109,7 @@
                 "scope": [
                     "keyword.control.directive.include.cpp",
                     "keyword.control.directive.pragma.cpp",
+                    "keyword.control.directive.define.cpp",
                     "keyword.control.directive.conditional.ifdef.cpp",
                     "keyword.control.directive.else.cpp",
                     "keyword.control.directive.endif.cpp",
@@ -168,10 +169,16 @@
                     "keyword.operator.cast.static_cast.cpp",
                     "keyword.operator.cast.reinterpret_cast.cpp",
                     "keyword.operator.cast.const_cast.cpp",
+                    "keyword.other.typedef.cpp",
                     "variable.language.this.cpp",
                     "storage.modifier.specifier.functional.pre-parameters.inline.cpp",
                     "storage.modifier.specifier.functional.pre-parameters.friend.cpp",
                     "storage.modifier.specifier.functional.post-parameters.noexcept.cpp",
+                    "storage.modifier.specifier.functional.pre-parameters.constexpr.cpp",
+                    "storage.modifier.virtual.cpp",
+                    "storage.modifier.constexpr.cpp",
+                    "storage.modifier.static.cpp",
+                    "storage.modifier.specifier.functional.pre-parameters.virtual.cpp",
                     "keyword.operator.sizeof.cpp",
                     "storage.modifier.specifier.functional.pre-parameters.explicit.cpp",
                     "storage.type.return-type.lambda.cpp",
@@ -194,7 +201,7 @@
         "rules": {
             "enumMember": "#b6cdb0",
             "newOperator": "#ae92b3",
-            "memberOperatorOverload": "#d4daec"
+            "memberOperatorOverload": "#d4daec",
         }
     }
 }
